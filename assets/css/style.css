@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body{
+	padding: 5%;
+}
+
+.ll-container{
+	position: relative;
+	padding: 5% 0;
+	height: 200px;
+	width: 100%;
+	border-radius: 100%;
+	margin: 5% 0;
+}
+
+.ll-container .ll-content{
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.ll-container img{
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	animation: fadeIn 2s ease;
+}
+
+button{
+	width: 100px;
+	height: 50px;
+	color: white;
+	background-color: black;
+	border: 1px solid black;
+	cursor: pointer;
+	transition: all ease .5s;
+}
+
+button:hover{
+	background-color: transparent;
+	color: black;
+	transition: all ease .5s;
+}
+
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+		visibility: hidden;
+	}
+	to{
+		opacity: 1;
+		visibility: visible;
+	}
+}
