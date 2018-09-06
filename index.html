@@ -26,7 +26,55 @@
 	<div class="ll-container">
 		<center>
 			<div class="ll-content">
-				<img data-src="assets/img/acme1.png" class="lazyload este" src="assets/img/acme2.png" alt="">
+				<img data-src="assets/img/acme1.png" class="lazyload este" src="assets/img/acme1.png" alt="">
+			</div>
+		</center>
+	</div>
+
+	<div class="ll-container">
+		<center>
+			<div class="ll-content">
+				<img data-src="assets/img/acme1.png" class="lazyload" alt="">
+			</div>
+		</center>
+	</div>
+
+	<div class="ll-container">
+		<center>
+			<div class="ll-content">
+				<img data-src="assets/img/acme1.png" class="lazyload este" alt="">
+			</div>
+		</center>
+	</div>
+
+	<div class="ll-container">
+		<center>
+			<div class="ll-content">
+				<img data-src="assets/img/acme1.png" class="lazyload" alt="">
+			</div>
+		</center>
+	</div>
+
+	<div class="ll-container">
+		<center>
+			<div class="ll-content">
+				<img data-src="assets/img/acme1.png" class="lazyload" alt="">
+			</div>
+		</center>
+	</div>
+
+	<div class="ll-container">
+		<center>
+			<div class="ll-content">
+				<img data-src="assets/img/acme1.png" class="lazyload este" alt="">
+			</div>
+		</center>
+	</div>
+
+	<div class="ll-container">
+		<center>
+			<div class="ll-content">
+				<img data-src="assets/img/acme1.png" class="lazyload" alt="">
 			</div>
 		</center>
 	</div>
@@ -47,38 +95,14 @@
 		</center>
 	</div>
 	
-	<center class="lastCenter">
+	<div class="container">
 		<button id="gerador">
 			GERAR
 		</button>
-	</center>
+	</div>
 </body>
 
 </html>
+
 <script src="js/lazyload.js"></script>
-<script type="text/javascript">
-	let lazy = lazyload(document.querySelectorAll(".este"));
-
-
-	var imagens = ["acme1.png", "acme2.png", "img1.jpg"];
-	var path = "assets/img/";
-
-	document.querySelector("#gerador").onclick = function(){
-
-		lazy.loadImages();
-		var body = document.querySelector("body");
-		var elementos = new Array();
-
-		for(let i = 0; i < 3; i++)
-			elementos.push(body.children[i+1]);
-
-		for(let i = 0, tam = elementos.length; i < tam; i++){
-			body.insertBefore(elementos[i],document.querySelector(".lastCenter"));
-		}
-
-		lazyload(document.querySelectorAll(".este"));
-	}
-
-	// for(let i, tam = document.querySelectorAll(".ll-content").length; i < tam; i++)
-		// document.querySelectorAll(".ll-content").style.backgroundImage = 'url("assets/img/acme1.png")';
-	</script>
+<script src="js/script.js"></script>
