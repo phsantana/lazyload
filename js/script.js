@@ -1,12 +1,12 @@
-let lazy = lazyload(document.querySelectorAll(".este"));
+// let lazy = lazyload(document.querySelectorAll(".este"));
+let lazy = lazyload();
 
+lazy.loadImages();
 
 var imagens = ["acme1.png", "acme2.png", "img1.jpg"];
 var path = "assets/img/";
 
 document.querySelector("#gerador").onclick = () => {
-
-	lazy.loadImages();
 
 	var body = document.querySelector("body");
 	var elementos = new Array();
@@ -22,8 +22,4 @@ document.querySelector("#gerador").onclick = () => {
 	body.innerHTML = preBody + preBody + posBody;
 
 		// lazyload(document.querySelectorAll(".este"));
-	}
-
-window.onload = () => {
-	alert(document.documentElement.scrollY);
 }
