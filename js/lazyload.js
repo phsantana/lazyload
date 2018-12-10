@@ -1,5 +1,5 @@
 var lazyLoad = element => {
-	var effect = "pop";
+	var effect = "fadeIn";
 
 	var img = new Image();
 	img.src = element.getAttribute('data-src');
